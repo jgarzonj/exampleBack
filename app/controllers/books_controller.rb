@@ -10,7 +10,10 @@ class BooksController < ApplicationController
 
   # GET /books/1
   def show
-    render json: @book
+    respond_to do |format|
+      format.json {render   json: @book}
+      format.pdf {render template: 'books/template_pdf',pdf:'libro'}
+    end
   end
 
 
