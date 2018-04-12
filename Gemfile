@@ -47,3 +47,7 @@ gem 'will_paginate', '~> 3.1.0'
 gem 'carrierwave', '~> 1.0'
 
 gem 'rack-cors', :require => 'rack/cors'
+
+gem 'wicked_pdf'
+
+gem 'wkhtmltopdf-binary'
