@@ -3,7 +3,7 @@ class BooksController < ApplicationController
 
   # GET /books
   def index
-    @books = Book.all
+    @books = Book.paginate(:page => params[:page], :per_page => 5)
 
     render json: @books
   end
@@ -12,6 +12,7 @@ class BooksController < ApplicationController
   def show
     render json: @book
   end
+
 
   # POST /books
   def create
