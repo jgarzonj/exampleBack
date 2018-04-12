@@ -45,3 +45,5 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'carrierwave', '~> 1.0'
+
+gem 'rack-cors', :require => 'rack/cors'
